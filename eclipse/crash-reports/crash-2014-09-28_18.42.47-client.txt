@@ -1,0 +1,113 @@
+---- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 9/28/14 6:42 PM
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at com.strange.learn.item.ItemL.getUnwrappedUnlocalizedName(ItemL.java:30)
+	at com.strange.learn.item.ItemL.getUnlocalizedName(ItemL.java:24)
+	at net.minecraft.item.Item.getUnlocalizedNameInefficiently(Item.java:607)
+	at net.minecraft.item.Item.getItemStackDisplayName(Item.java:744)
+	at net.minecraft.item.ItemStack.getDisplayName(ItemStack.java:536)
+	at net.minecraftforge.client.GuiIngameForge.renderToolHightlight(GuiIngameForge.java:589)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:157)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1114)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1057)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:951)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at GradleStart.bounce(GradleStart.java:107)
+	at GradleStart.startClient(GradleStart.java:100)
+	at GradleStart.main(GradleStart.java:55)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.strange.learn.item.ItemL.getUnwrappedUnlocalizedName(ItemL.java:30)
+	at com.strange.learn.item.ItemL.getUnlocalizedName(ItemL.java:24)
+	at net.minecraft.item.Item.getUnlocalizedNameInefficiently(Item.java:607)
+	at net.minecraft.item.Item.getItemStackDisplayName(Item.java:744)
+	at net.minecraft.item.ItemStack.getDisplayName(ItemStack.java:536)
+	at net.minecraftforge.client.GuiIngameForge.renderToolHightlight(GuiIngameForge.java:589)
+	at net.minecraftforge.client.GuiIngameForge.renderGameOverlay(GuiIngameForge.java:157)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player171'/36822, l='MpServer', x=939.50, y=5.62, z=175.50]]
+	Chunk stats: MultiplayerChunkCache: 622, 622
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (941,4,184), Chunk: (at 13,0,8 in 58,11; contains blocks 928,0,176 to 943,255,191), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 467 game time, 467 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 51 total; [EntityPig['Pig'/169303, l='MpServer', x=946.50, y=4.00, z=237.50], EntitySheep['Sheep'/169308, l='MpServer', x=943.50, y=4.00, z=237.50], EntitySheep['Sheep'/169309, l='MpServer', x=944.50, y=4.00, z=234.50], EntitySheep['Sheep'/169310, l='MpServer', x=944.50, y=4.00, z=231.50], EntityChicken['Chicken'/169311, l='MpServer', x=947.50, y=4.00, z=241.50], EntityPig['Pig'/169304, l='MpServer', x=948.50, y=4.00, z=236.50], EntityPig['Pig'/169305, l='MpServer', x=947.45, y=4.00, z=239.47], EntitySheep['Sheep'/169152, l='MpServer', x=1010.50, y=4.00, z=152.50], EntityPig['Pig'/169306, l='MpServer', x=948.67, y=4.00, z=240.21], EntitySheep['Sheep'/169153, l='MpServer', x=1007.50, y=4.00, z=153.50], EntitySheep['Sheep'/169307, l='MpServer', x=946.06, y=4.00, z=239.50], EntitySheep['Sheep'/169196, l='MpServer', x=935.03, y=4.00, z=220.25], EntityVillager['Villager'/36810, l='MpServer', x=1009.47, y=5.00, z=183.09], EntitySheep['Sheep'/169197, l='MpServer', x=931.03, y=4.00, z=214.84], EntityVillager['Villager'/36809, l='MpServer', x=1003.50, y=5.00, z=168.50], EntityChicken['Chicken'/169198, l='MpServer', x=925.50, y=4.00, z=224.50], EntityVillager['Villager'/36808, l='MpServer', x=1017.50, y=5.00, z=158.28], EntityChicken['Chicken'/169199, l='MpServer', x=928.50, y=4.00, z=222.50], EntityChicken['Chicken'/169192, l='MpServer', x=921.72, y=4.00, z=225.13], EntityChicken['Chicken'/169193, l='MpServer', x=921.50, y=4.00, z=221.50], EntitySheep['Sheep'/169194, l='MpServer', x=927.50, y=4.00, z=222.50], EntitySheep['Sheep'/169195, l='MpServer', x=925.50, y=4.00, z=223.50], EntityVillager['Villager'/36803, l='MpServer', x=1014.69, y=5.00, z=183.69], EntityChicken['Chicken'/169189, l='MpServer', x=865.16, y=4.00, z=190.44], EntityChicken['Chicken'/169190, l='MpServer', x=927.50, y=4.00, z=220.50], EntityChicken['Chicken'/169191, l='MpServer', x=927.50, y=4.00, z=217.50], EntityVillager['Villager'/36806, l='MpServer', x=1006.50, y=5.00, z=161.50], EntityVillager['Villager'/36805, l='MpServer', x=1014.00, y=5.50, z=182.47], EntityItem['item.tile.torch'/36804, l='MpServer', x=999.88, y=5.13, z=193.13], EntitySlime['Slime'/76975, l='MpServer', x=898.20, y=4.47, z=227.07], EntitySlime['Slime'/180912, l='MpServer', x=1014.29, y=4.00, z=99.19], EntitySlime['Slime'/180915, l='MpServer', x=1015.25, y=4.00, z=100.34], EntityChicken['Chicken'/169314, l='MpServer', x=947.03, y=4.00, z=246.53], EntityChicken['Chicken'/169313, l='MpServer', x=943.50, y=4.00, z=245.50], EntityChicken['Chicken'/169312, l='MpServer', x=945.50, y=4.00, z=241.50], EntityChicken['Chicken'/169201, l='MpServer', x=922.53, y=4.00, z=228.44], EntityChicken['Chicken'/169200, l='MpServer', x=924.50, y=4.00, z=223.50], EntitySlime['Slime'/173643, l='MpServer', x=966.13, y=4.00, z=186.87], EntityClientPlayerMP['Player171'/36822, l='MpServer', x=939.50, y=5.62, z=175.50], EntitySlime['Slime'/74128, l='MpServer', x=922.90, y=4.96, z=245.42], EntitySlime['Slime'/38068, l='MpServer', x=885.43, y=5.06, z=141.98], EntitySheep['Sheep'/169145, l='MpServer', x=937.91, y=4.00, z=148.81], EntitySheep['Sheep'/169144, l='MpServer', x=933.19, y=4.00, z=151.75], EntitySkeleton['Skeleton'/152999, l='MpServer', x=996.50, y=9.00, z=189.50], EntitySheep['Sheep'/169147, l='MpServer', x=1015.50, y=4.00, z=145.50], EntitySheep['Sheep'/169146, l='MpServer', x=1017.50, y=4.00, z=147.50], EntitySheep['Sheep'/169151, l='MpServer', x=1014.50, y=4.00, z=150.50], EntitySheep['Sheep'/169150, l='MpServer', x=1017.50, y=4.00, z=149.50], EntitySlime['Slime'/119806, l='MpServer', x=886.02, y=4.00, z=242.09], EntitySheep['Sheep'/169143, l='MpServer', x=931.50, y=4.00, z=151.50], EntityChicken['Chicken'/169142, l='MpServer', x=935.94, y=4.00, z=147.16]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2556)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:980)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at GradleStart.bounce(GradleStart.java:107)
+	at GradleStart.startClient(GradleStart.java:100)
+	at GradleStart.main(GradleStart.java:55)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 8.1 (amd64) version 6.3
+	Java Version: 1.7.0_67, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 699665024 bytes (667 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.84.1217 Minecraft Forge 10.13.1.1217 4 mods loaded, 4 mods active
+	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	FML{7.10.84.1217} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.1.1217.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Forge{10.13.1.1217} [Minecraft Forge] (forgeSrc-1.7.10-10.13.1.1217.jar) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Learn{1.0} [Learning] (bin) Unloaded->Constructed->Pre-initialized->Initialized->Post-initialized->Available->Available->Available->Available->Available->Available->Available->Available->Available
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 660 Ti/PCIe/SSE2 GL version 4.4.0 NVIDIA 344.11, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

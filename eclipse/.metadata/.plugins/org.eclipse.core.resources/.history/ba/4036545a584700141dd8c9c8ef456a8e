@@ -1,0 +1,12 @@
+package com.strange.learn.item;
+
+import net.minecraft.item.Item;
+
+public class ItemL extends Item
+{
+	public ItemL()
+	{
+		super();
+		
+	}
+}

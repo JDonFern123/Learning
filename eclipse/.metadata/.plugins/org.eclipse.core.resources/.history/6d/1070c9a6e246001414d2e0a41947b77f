@@ -1,0 +1,9 @@
+package com.strange.learn;
+
+import cpw.mods.fml.common.Mod;
+
+@Mod(modid = "Learn", name = "Learning", version = "1.0")
+public class Learn 
+{
+
+}

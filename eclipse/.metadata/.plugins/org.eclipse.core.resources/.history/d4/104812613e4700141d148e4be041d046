@@ -1,0 +1,35 @@
+package com.strange.learn.configruation;
+
+import java.io.File;
+
+import net.minecraftforge.common.config.Configuration;
+
+public class ConfigurationHandler 
+{
+	public static void init(File configFile)
+	{
+		//Create config
+		Configuration configuration = new Configuration(configFile);
+		boolean configValue = false;
+		
+		try
+		{
+			//Load the config
+			configuration.load();
+			
+			//Read in properties from config
+			configValue = configuration.get("Test", "configValue", true, "This is an example config value").getBoolean(true);
+		}
+		catch (Exception e)
+		{
+			//Log the exception
+		}
+		finally
+		{
+			//Save the config
+			configuration.save();
+		}
+		
+		System.out.println("Configuration Test: " + configValue);
+	}
+}

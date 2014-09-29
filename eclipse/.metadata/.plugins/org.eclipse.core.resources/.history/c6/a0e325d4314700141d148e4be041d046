@@ -1,0 +1,6 @@
+package com.strange.learn.proxy1;
+
+public class ClientProxy extends CommonProxy
+{
+	
+}

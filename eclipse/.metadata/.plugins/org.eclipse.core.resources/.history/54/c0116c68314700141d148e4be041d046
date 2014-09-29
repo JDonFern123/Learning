@@ -1,0 +1,6 @@
+package com.strange.learn.proxy1;
+
+public abstract class CommonProxy implements IProxy
+{
+	
+}

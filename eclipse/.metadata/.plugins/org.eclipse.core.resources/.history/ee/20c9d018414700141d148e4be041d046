@@ -1,0 +1,6 @@
+package com.strange.learn.client.gui;
+
+public class GuiConfig extends GuiConfig
+{
+
+}

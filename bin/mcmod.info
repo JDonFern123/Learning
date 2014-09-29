@@ -1,0 +1,30 @@
+[
+
+{
+
+"modid": "Learn",
+"name": "Learning",
+"description": "This is the mod that I made while watching Pahimar's tutorials",
+"version": "1.0",
+"mcversion": "1.7.10",
+"url": "",
+"updateUrl": "",
+"authorList": 
+[
+"BryanTheStrange"
+],
+"credits": "The author(s)",
+"logoFile": "",
+"screenshots": 
+[
+
+],
+"parent":"",
+"dependencies": 
+[
+
+]
+
+}
+
+] 
